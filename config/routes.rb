@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  #devise_for :installs
   root 'pages#home'
   get 'about' => 'pages#about' # creates about path
 get 'about' => 'pages#about'

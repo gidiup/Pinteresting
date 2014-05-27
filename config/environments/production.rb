@@ -80,4 +80,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Required for Heroku
+  #Note this is for the public site and changing localhost for production to a public DNS host name required
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
 end
