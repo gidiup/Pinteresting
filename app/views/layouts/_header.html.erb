@@ -1,4 +1,5 @@
 <nav class="navbar navbar-default" role="navigation">
+  <div class="container">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -7,6 +8,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
+    <% link_to "Pinteresting", root_path, class: "navabar-brand" %>
     <a class="navbar-brand" href="#">Pinteresting</a>
   </div>
 
@@ -17,4 +19,5 @@
       <li><%= link_to "About", about_path %></li> 
     </ul>
   </div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
 </nav>
