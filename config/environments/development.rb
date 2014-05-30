@@ -36,7 +36,7 @@ Rails.application.configure do
  config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
   # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
+  config.action_view.raise_on_missing_translations = true
 #converter
-#Paperclip.options[:command_path] = 'c:\Program Files\ImageMagick-6.8.9-Q16\covert'
+Paperclip.options[:command_path] = 'c:\Program Files\ImageMagick-6.8.9-Q16'
 end

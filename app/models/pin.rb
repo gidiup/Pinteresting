@@ -1,6 +1,8 @@
 class Pin < ActiveRecord::Base
      belongs_to :user
      has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
-     validates_attachment_content_type :image, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
-			Paperclip.options[:content_type_mappings] = {nil => "image/png"}
+     #validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
+          #validates_attachment_content_type :image, content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+     			#:message => :inclusion
+			#Paperclip.options[:content_type_mappings] = {nil => "image/png"}
 end
