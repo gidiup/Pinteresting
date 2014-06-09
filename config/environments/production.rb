@@ -83,7 +83,7 @@ Rails.application.configure do
 
   # Required for Heroku
   #Note this is for the public site and changing localhost for production to a public DNS host name required
-  config.action_mailer.default_url_options = { host: 'http://gidiup-pinteresting.herokuapp.com/' }
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
 config.paperclip_defaults = {
   :storage => :s3,
